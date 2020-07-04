@@ -1,0 +1,1 @@
+docker images -a | awk '{print $3}' | parallel 'docker rmi -f {}'
